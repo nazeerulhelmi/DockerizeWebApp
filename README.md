@@ -1,11 +1,12 @@
 # DockerizeWebApp
-**Create a new folder/directory**
+**1. Create a new folder/directory**
 root@nazeerul:~# mkdir dockerweb
 
-**Change directory to newly created folder**
+**2. Change directory to newly created folder**
 root@nazeerul:~# cd dockerweb
 
 **Create and edit Dockerfile**
+
     # Base image of gninx
     FROM nginx:latest
     # Working directory
@@ -20,6 +21,15 @@ root@nazeerul:~# cd dockerweb
     #simple configuration
     #COPY nginx.conf /etc/nginx/nginx.conf
 
+**3. Build dockerfile image and named it webapp**
+root@nazeerul:~/dockerweb# docker build -t webapp .
+
+**4. Run the image on 8080 port**
+root@nazeerul:~/dockerweb# docker run -d -p 8080:80 webapp
+
+**5. Result:**
+
+**6. index.html created inside dockerweb folder**
 
     <!DOCTYPE html>
     <html>
