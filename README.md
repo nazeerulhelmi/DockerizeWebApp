@@ -33,7 +33,7 @@ root@nazeerul:~/dockerweb# docker run -d -p 8080:80 webapp
 
 **5. Result:**
 
-![Example Image](8080.png)
+![Example Image](8080.PNG)
 
 **6. index.html created inside dockerweb folder**
 
@@ -88,4 +88,4 @@ root@nazeerul:~/dockerweb# docker volume create vol_app
 
 **9. Result:**
 
-![Example Image](8000.png)
+![Example Image](8000.PNG)
