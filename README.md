@@ -1,5 +1,11 @@
 # DockerizeWebApp
+**Create a new folder/directory**
+root@nazeerul:~# mkdir dockerweb
 
+**Change directory to newly created folder**
+root@nazeerul:~# cd dockerweb
+
+**Create and edit Dockerfile**
     # Base image of gninx
     FROM nginx:latest
     # Working directory
