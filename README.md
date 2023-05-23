@@ -33,6 +33,8 @@ root@nazeerul:~/dockerweb# docker run -d -p 8080:80 webapp
 
 **5. Result:**
 
+![Example Image](8080.png)
+
 **6. index.html created inside dockerweb folder**
 
     <!DOCTYPE html>
@@ -85,3 +87,5 @@ root@nazeerul:~/dockerweb# docker volume create vol_app
     #     MONGO_DB_PWD=password
 
 **9. Result:**
+
+![Example Image](8000.png)
