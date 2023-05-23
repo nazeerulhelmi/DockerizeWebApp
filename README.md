@@ -54,7 +54,11 @@ root@nazeerul:~/dockerweb# docker run -d -p 8080:80 webapp
     </body>
     </html>
 
-**7. Create docker-compose.yml**
+**7. Create a volume and named it vol_app**
+
+root@nazeerul:~/dockerweb# docker volume create vol_app
+
+**8. Create docker-compose.yml and map port to 8000 _(since I have use 8080 port when running the image previously, hence I am not sure how it will affect the result if I use 8080 port again when running docker-compose)_ and do volume mapping to vol_app**
 
     version: '3'
     services:
@@ -80,4 +84,4 @@ root@nazeerul:~/dockerweb# docker run -d -p 8080:80 webapp
     # ENV MONGO_DB_USERNAME = admin\
     #     MONGO_DB_PWD=password
 
-**8. Result:**
+**9. Result:**
