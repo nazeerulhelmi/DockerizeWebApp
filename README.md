@@ -45,7 +45,7 @@ services:
       context: .
       dockerfile: Dockerfile
 
-    ports:
+   ports:
       - 8000:80
 
     volumes:
