@@ -1,8 +1,10 @@
 # DockerizeWebApp
 **1. Create a new folder/directory**
+
 root@nazeerul:~# mkdir dockerweb
 
 **2. Change directory to newly created folder**
+
 root@nazeerul:~# cd dockerweb
 
 **Create and edit Dockerfile**
@@ -22,9 +24,11 @@ root@nazeerul:~# cd dockerweb
     #COPY nginx.conf /etc/nginx/nginx.conf
 
 **3. Build dockerfile image and named it webapp**
+
 root@nazeerul:~/dockerweb# docker build -t webapp .
 
 **4. Run the image on 8080 port**
+
 root@nazeerul:~/dockerweb# docker run -d -p 8080:80 webapp
 
 **5. Result:**
@@ -50,9 +54,7 @@ root@nazeerul:~/dockerweb# docker run -d -p 8080:80 webapp
     </body>
     </html>
 
-
-
-
+**7. Create docker-compose.yml**
 
     version: '3'
     services:
@@ -73,7 +75,9 @@ root@nazeerul:~/dockerweb# docker run -d -p 8080:80 webapp
             limits:
               cpus: '0.5'
               memory: '128M'
-# if mongodb
-# environnment variable
-# ENV MONGO_DB_USERNAME = admin\
-#     MONGO_DB_PWD=password
+    # if mongodb
+    # environnment variable
+    # ENV MONGO_DB_USERNAME = admin\
+    #     MONGO_DB_PWD=password
+
+**8. Result:**
