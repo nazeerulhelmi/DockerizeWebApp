@@ -38,25 +38,25 @@ p    {color: red;}
 
 
 
-version: '3'
-services:
-  web:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    version: '3'
+    services:
+      web:
+        build:
+          context: .
+          dockerfile: Dockerfile
 
-   ports:
-      - 8000:80
+        ports:
+          - 8000:80
 
-    volumes:
-      #- ./usr/share/nginx/html
-      - -v /var/lib/docker/volumes/vol_app/_data
+        volumes:
+          #- ./usr/share/nginx/html
+          - -v /var/lib/docker/volumes/vol_app/_data
 
-    deploy:
-      resources:
-        limits:
-          cpus: '0.5'
-          memory: '128M'
+        deploy:
+          resources:
+            limits:
+              cpus: '0.5'
+              memory: '128M'
 # if mongodb
 # environnment variable
 # ENV MONGO_DB_USERNAME = admin\
